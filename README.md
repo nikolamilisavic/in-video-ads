@@ -7,6 +7,7 @@ Library will detect video and inject banner by respecting player states (PLAY, P
 - title: Presents text which will be shown above the banner
 - clickUrl: Presents target URL where user will be redirected after clicking on banner
 - imageUrl: Presents URL of image which will be shown as banner
+- openInNewTab: Defines should we open link in new or same tab. Default value is true.
 - width: Defines image width
 - height: Defines image height
 
