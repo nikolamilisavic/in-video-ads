@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flow Player</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://releases.flowplayer.org/6.0.5/skin/functional.css">
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="https://releases.flowplayer.org/6.0.5/flowplayer.min.js"></script>
+    </head>
+
+    <body>
+        <div class="flowplayer">
+            <video id="target-video">
+                <source src="../assets/video/example.mp4" type="video/mp4">
+            </video>
+        </div>
+       
+        <script src="../inVideoAds.js"></script>
+        
+        <script type="text/javascript">
+            var inVideoAdOptions = {
+               width: 300,
+               height: 250,
+               title: 'Advertising',
+               clickUrl: 'https://example.com',
+               imageUrl: '../assets/images/300x250.gif',
+            };
+        </script>
+    </body>
+</html>
