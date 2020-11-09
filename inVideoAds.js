@@ -12,10 +12,16 @@ inVideoAds = {
     playerStates: {PLAY: 'PLAY', PAUSE: 'PAUSE', END: 'END', IDLE: 'IDLE'},
     
     htmlAd: function() {
+      var openInNewTab = true;
+      
+      if (inVideoAdOptions.openInNewTab !== 'undefined') {
+         openInNewTab = inVideoAdOptions.openInNewTab;
+      }
+      
       return `<div class="in-video-ad" style="display: none; position: absolute; transform: translate3d(-50%,-50%,0); z-index: 100; text-align: center;">
                   <p style="position: absolute; text-align: left; bottom: 100%; margin:0; font-family: sans-serif; background: rgba(0, 0, 0, 0.47); width: 100%; padding: 7px 5px; box-sizing: border-box; color: #fff;font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">${inVideoAdOptions.title}</p>
                   <a class="close" href="javascript:void(0)" style="position: absolute; bottom: 102.8%; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; right: 5px; color: #fff; text-decoration: none; font-family: sans-serif; z-index: 10;">Close</a>
-                  <a href="${inVideoAdOptions.clickUrl}">
+                  <a href="${inVideoAdOptions.clickUrl}" target="${openInNewTab ? '_blank' : '_self'}">
                       <img src="${inVideoAdOptions.imageUrl}"/>
                   </a>
               </div>`; 
