@@ -14,7 +14,7 @@ inVideoAds = {
     htmlAd: function() {
       var openInNewTab = true;
       
-      if (inVideoAdOptions.openInNewTab !== 'undefined') {
+      if (inVideoAdOptions.openInNewTab !== undefined) {
          openInNewTab = inVideoAdOptions.openInNewTab;
       }
       
