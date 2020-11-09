@@ -1,6 +1,7 @@
 ## In Video Ads
 This library can be used for display ads/ banners in videos. Depends only on jQuery.
 In order to use this library all what you need to do is to include plugin and create inVideoAdOptions object with configuration properties.
+Library will detect video and inject banner by respecting player states (PLAY, PAUSE, END).
 
 ## Configuration properties
 - title: Presents text which will be shown above the banner
@@ -24,5 +25,9 @@ In order to use this library all what you need to do is to include plugin and cr
     };
 </script>
 ```
+
+## Supported players
+- Flowplayer
+- HTML5 player
 
 For more details please look at examples directory.
