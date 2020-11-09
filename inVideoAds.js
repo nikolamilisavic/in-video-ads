@@ -130,15 +130,6 @@ if (inVideoAds.player === null && typeof flowplayer === 'function') {
     });
 }
 
-$(document).ready(function() {
-    if (inVideoAds.player === null && typeof jwplayer === 'function') {
-        inVideoAds.player = jwplayer();
-        inVideoAds.objectPlayer = $("#" + jwplayer().id);
-        inVideoAds.playerType = 'jwplayer';
-        inVideoAds.jwplayer.init();
-    }
-});
-
 $(window).resize(function() {
     inVideoAds.reinitAd();
 });
