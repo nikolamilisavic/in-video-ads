@@ -8,3 +8,21 @@ In order to use this library all what you need to do is to include plugin and cr
 - imageUrl: Presents URL of image which will be shown as banner
 - width: Defines image width
 - height: Defines image height
+
+## Usage example
+
+```js
+<script src="../inVideoAds.js"></script>
+
+<script type="text/javascript">
+    var inVideoAdOptions = {
+        width: 300,
+        height: 250,
+        title: 'Advertising',
+        clickUrl: 'https://example.com',
+        imageUrl: '../assets/images/300x250.gif',
+    };
+</script>
+```
+
+For more details please look at examples directory.
