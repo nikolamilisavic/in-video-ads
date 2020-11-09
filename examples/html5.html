@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Player</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        
+        <style>
+            .html5 {
+               text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="html5">
+            <video id="target-video" width="641" height="360" controls>
+                <source src="../assets/video/example.mp4" type="video/mp4">
+            </video>
+        </div>
+       
+        <script type="text/javascript">
+            var inVideoAdOptions = {
+               width: 300,
+               height: 250,
+               title: 'Advertising',
+               clickUrl: 'https://example.com',
+               imageUrl: '../assets/images/300x250.gif',
+            };
+        </script>
+        
+        <script src="../inVideoAds.js"></script>
+        
+    </body>
+</html>
