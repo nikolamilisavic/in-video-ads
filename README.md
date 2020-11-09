@@ -13,8 +13,6 @@ Library will detect video and inject banner by respecting player states (PLAY, P
 ## Usage example
 
 ```js
-<script src="../inVideoAds.js"></script>
-
 <script type="text/javascript">
     var inVideoAdOptions = {
         width: 300,
@@ -24,6 +22,8 @@ Library will detect video and inject banner by respecting player states (PLAY, P
         imageUrl: '../assets/images/300x250.gif',
     };
 </script>
+
+<script src="../inVideoAds.js"></script>
 ```
 
 ## Supported players
