@@ -29,6 +29,7 @@ Library will detect video and inject banner by respecting player states (PLAY, P
 
 ## Supported players
 - Flowplayer
+- Kernel player
 - HTML5 player
 
 For more details please look at examples directory.
