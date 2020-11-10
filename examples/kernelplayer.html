@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kernel Player</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="../assets/js/kt_player.js"></script>
+        
+        <style>
+            #kt_player {
+               width: 600px;
+               margin: 0 auto;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="kt_player" style="visibility: hidden;"></div>
+        
+        <script type="text/javascript">
+            var flashvars = {
+                video_url: '../assets/video/example.mp4',
+                preview_url: ''
+            };
+            
+            var params = {allowfullscreen: 'true', allowscriptaccess: 'always'};
+            
+            var player_obj = kt_player('kt_player', '', '600', '400', flashvars, params);
+        </script>
+        
+        <script type="text/javascript">
+            var inVideoAdOptions = {
+               width: 300,
+               height: 250,
+               title: 'Advertising',
+               clickUrl: 'https://example.com',
+               imageUrl: '../assets/images/300x250.gif',
+            };
+        </script>
+        
+        <script src="../inVideoAds.js"></script>
+    </body>
+</html>
